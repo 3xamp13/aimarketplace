@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Model Marketplace</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container">
+    <h1 class="my-4 text-center">AI Model Marketplace</h1>
+    <h2 class="my-4">List a New Model</h2>
+    <form id="listModelForm" class="form-inline">
+      <div class="form-group mb-2">
+        <input type="text" id="modelName" class="form-control mr-2" placeholder="Model Name" required>
+      </div>
+      <div class="form-group mb-2">
+        <input type="text" id="modelDescription" class="form-control mr-2" placeholder="Model Description" required>
+      </div>
+      <div class="form-group mb-2">
+        <input type="number" id="modelPrice" class="form-control mr-2" placeholder="Price (ETH)" required>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">List Model</button>
+    </form>
+    <h2 class="my-4">Available Models</h2>
+    <div id="modelList" class="row"></div>
+    <h2 class="my-4">Rate a Purchased Model</h2>
+    <form id="rateModelForm" class="form-inline">
+      <div class="form-group mb-2">
+        <input type="number" id="modelId" class="form-control mr-2" placeholder="Model ID" required>
+      </div>
+      <div class="form-group mb-2">
+        <input type="number" id="rating" class="form-control mr-2" placeholder="Rating (1-5)" required>
+      </div>
+      <button type="submit" class="btn btn-warning mb-2">Rate Model</button>
+    </form>
+    <h2 class="my-4">Withdraw Funds</h2>
+    <button class="btn btn-success" onclick="withdrawFunds()">Withdraw Funds</button>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

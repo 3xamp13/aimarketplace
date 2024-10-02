@@ -1,0 +1,19 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "truffle-contract": "^4.0.31",
+    "web3": "^4.13.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
