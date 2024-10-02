@@ -28,7 +28,7 @@ A decentralized application that allows users to list, purchase, and rate AI mod
   npm run dev
 
 5. **Interacting with the Models**
-https://github.com/3xamp13/aimarketplace/blob/main/front-workplace.png
+![Image alt](https://github.com/3xamp13/aimarketplace/blob/main/front-workplace.png)
 
 To list a new model: Enter model name, description and the price. Press List Model button.
 Available models are shown if there is any.
